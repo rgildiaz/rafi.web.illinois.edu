@@ -1,5 +1,48 @@
+@font-face {
+  font-family: IBM Plex Mono;
+  src: url(fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: JetBrains Mono;
+  src: url(fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: JetBrains Bold;
+  src: url(fonts/JetBrains_Mono/static/JetBrainsMono-Bold.ttf);
+}
+
+:root {
+  background-color: #282c34;
+  --student-em-color: rgba(48, 139, 188, 0.35);
+  --blog-em-color: rgba(74, 191, 133, 0.5);
+  --music-em-color: rgba(217, 143, 198, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+.nav-link:hover {
+  font-style: italic;
+}
+
+.logo {
+  padding-right: 30px;
+  font-size: 35px;
+  color: white;
+  font-weight: bolder;
+}
+
+.logo a:hover {
+  font-style: normal !important;
+}
+
 .App {
   text-align: center;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .App-logo {
@@ -14,7 +57,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +77,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav-link {
+  padding-right: 30px;
 }
