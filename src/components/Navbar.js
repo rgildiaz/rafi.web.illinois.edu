@@ -6,8 +6,7 @@ function Navbar(props) {
     overflow: "hidden",
     position: "sticky",
     top: "0px",
-    // background: "#282c34",
-    "padding": "30px"
+    "margin": "30px",
   };
 
   if (props.mobile) {
@@ -17,7 +16,7 @@ function Navbar(props) {
     return (
       <nav className="navbar" style={{ ...navStyles }}>
         <div className="nav-container">
-          <a className="logo" href="index.html">R</a>
+          <a className="logo em" href="index.html">R</a>
           <a className="nav-link" href="html/portfolio.html">
             <span className="me">me</span>
           </a>

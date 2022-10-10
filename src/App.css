@@ -18,6 +18,9 @@
   --student-em-color: rgba(48, 139, 188, 0.35);
   --blog-em-color: rgba(74, 191, 133, 0.5);
   --music-em-color: rgba(217, 143, 198, 0.5);
+  --em-color0: rgb(48, 139, 188);
+  --em-color1: rgb(34, 101, 136);
+  --em-color2: rgb(20, 60, 82);
 }
 
 a {
@@ -25,35 +28,15 @@ a {
   color: grey;
 }
 
-.nav-link:hover {
-  font-style: italic;
-}
-
-.logo {
-  padding-right: 30px;
-  font-size: 35px;
-  color: white;
-  font-weight: bolder;
-}
-
-.logo a:hover {
-  font-style: normal !important;
+.em {
+  text-shadow: 3px 3px var(--em-color0), 6px 6px var(--em-color1),
+    9px 9px var(--em-color2);
 }
 
 .App {
   text-align: center;
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: "JetBrains Mono", monospace;
+  color: white;
 }
 
 .App-header {
@@ -63,22 +46,55 @@ a {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+}
+
+/* Navbar */
+
+.nav-link:hover {
+  animation: 0.5s menuHover steps(5, end) forwards;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  padding-right: 50px;
+  font-size: 35px;
+  color: white;
+  font-weight: bolder;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo a:hover {
+  font-style: normal !important;
 }
 
 .nav-link {
   padding-right: 30px;
+}
+
+@keyframes menuHover {
+  from {}
+
+  33% {
+    text-shadow: 2px 2px var(--em-color0);
+  }
+
+  66% {
+    text-shadow: 2px 2px var(--em-color0), 4px 4px var(--em-color1);
+  }
+
+  to {
+    text-shadow: 2px 2px var(--em-color0), 4px 4px var(--em-color1),
+      6px 6px var(--em-color2);
+  }
+}
+
+/* Main Content */
+
+.caret-down {
+  position: absolute;
+  bottom: 0;
+  color: gray;
+}
+
+footer {
+  color: gray;
 }
