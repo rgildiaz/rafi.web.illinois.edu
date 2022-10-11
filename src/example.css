@@ -1,0 +1,14 @@
+
+    @keyframes shadow-colors {
+        
+      0%: {text-shadow: 2px 2px rgb(48, 139, 188), }
+      13%: {text-shadow: 2px 2px rgb(48, 139, 188), 4px 4px rgb(38, 129, 178), }
+      25%: {text-shadow: 2px 2px rgb(48, 139, 188), 4px 4px rgb(38, 129, 178), 6px 6px rgb(28, 119, 168), }
+      38%: {text-shadow: 2px 2px rgb(74, 191, 133), }
+      50%: {text-shadow: 2px 2px rgb(74, 191, 133), 4px 4px rgb(64, 181, 123), }
+      63%: {text-shadow: 2px 2px rgb(74, 191, 133), 4px 4px rgb(64, 181, 123), 6px 6px rgb(54, 171, 113), }
+      75%: {text-shadow: 2px 2px rgb(217, 143, 198), }
+      88%: {text-shadow: 2px 2px rgb(217, 143, 198), 4px 4px rgb(207, 133, 188), }
+      100%: {text-shadow: 2px 2px rgb(217, 143, 198), 4px 4px rgb(207, 133, 188), 6px 6px rgb(197, 123, 178), }
+            }
+        

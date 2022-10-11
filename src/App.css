@@ -13,6 +13,10 @@
   src: url(fonts/JetBrains_Mono/static/JetBrainsMono-Bold.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   background-color: #282c34;
   --student-em-color: rgba(48, 139, 188, 0.35);
@@ -39,19 +43,10 @@ a {
   color: white;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
 /* Navbar */
 
 .nav-link:hover {
-  animation: 0.5s menuHover steps(5, end) forwards;
+  animation: 0.5s menuHover steps(4, end) forwards;
   color: white;
 }
 
@@ -86,6 +81,7 @@ a {
       6px 6px var(--em-color2);
   }
 }
+    
 
 /* Main Content */
 

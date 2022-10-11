@@ -1,3 +1,5 @@
+import Navlink from "./Navlink";
+
 function Navbar(props) {
   const navStyles = {
     display: "block",
@@ -5,7 +7,7 @@ function Navbar(props) {
     width: "fit-content",
     overflow: "hidden",
     position: "sticky",
-    top: "0px",
+    top: "30px",
     "margin": "30px",
   };
 
@@ -16,16 +18,10 @@ function Navbar(props) {
     return (
       <nav className="navbar" style={{ ...navStyles }}>
         <div className="nav-container">
-          <a className="logo em" href="index.html">R</a>
-          <a className="nav-link" href="html/portfolio.html">
-            <span className="me">me</span>
-          </a>
-          <a className="nav-link" href="html/blog.html">
-            <span className="blog">blog</span>
-          </a>
-          <a className="nav-link" href="html/music.html">
-            <span className="music">music</span>
-          </a>
+          <a className="logo em" href="#">R</a>
+          <Navlink name="me"/>
+          <Navlink name="blog"/>
+          <Navlink name="music"/>
         </div>
         {/* <footer className="footer-desktop">&copy; 2022 Rafi Gil Diaz</footer> */}
       </nav>
