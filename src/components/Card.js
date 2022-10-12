@@ -16,7 +16,7 @@ export default function Card(props) {
   };
 
   return (
-    <div style={{ ...cardStyles }}>
+    <div id={props.name} style={{ ...cardStyles }}>
       <div className="card-title">
         <h3 style={{ display: "inline" }}>{props.name}.</h3>
         <p style={{ display: "inline-block", fontSize: "13px" }}>{props.date}</p>

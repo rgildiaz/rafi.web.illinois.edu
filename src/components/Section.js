@@ -6,7 +6,7 @@ export default function Section(props) {
     alignItems: align,
     justifyContent: align,
     textAlign: align,
-    margin: "max(10vh, 40px)"
+    margin: "max(9vmin, 20px)"
   };
 
   return (

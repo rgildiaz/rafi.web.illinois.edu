@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 11vh;
 }
 
 :root {
@@ -36,7 +37,9 @@ a:hover {
   color: white;
 }
 
-a, p, li {
+a,
+p,
+li {
   font-size: calc(8px + 1vmin);
 }
 
@@ -52,7 +55,8 @@ h3 {
   font-size: calc(10px + 2vmin);
 }
 
-p, li {
+p,
+li {
   color: lightgray;
   text-align: justify;
 }
@@ -163,6 +167,19 @@ li::before {
   font-size: max(30px, 5vmin);
 }
 
-.contacts-container > * {
+.contacts-container>* {
   padding: 0 5vmin 0 5vmin;
+}
+
+footer * {
+  font-size: 12px;
+  color: gray,
+}
+
+Section[id='who i am'] ul li a {
+  color: lightgray;
+}
+
+Section[id='who i am'] ul li a:hover {
+  color: white;
 }

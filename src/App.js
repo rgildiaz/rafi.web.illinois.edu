@@ -39,16 +39,45 @@ function App() {
           <Section name="who i am">
             <ul>
               <li>
-                a <strong>student</strong> at UIUC studying Information Science
-                and Music Technology,
+                a <strong>student</strong> at UIUC studying{" "}
+                <a
+                  href="https://ischool.illinois.edu/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  information science
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://music.illinois.edu/area/music-technology"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  music technology
+                </a>
+                ,
               </li>
               <li>
-                an <strong>operations support intern</strong> at the Information
-                Trust Institute
+                an <strong>operations support intern</strong> at the{" "}
+                <a
+                  href="https://iti.illinois.edu/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Information Trust Institute
+                </a>
+                ,
               </li>
               <li>
-                an <strong>undergraduate researcher</strong> helping build a
-                data storytelling toolkit for librarians
+                an <strong>undergraduate researcher</strong> helping build a{" "}
+                <a
+                  href="https://uiucdstl.wixsite.com/uiucdstl"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  data storytelling toolkit for librarians
+                </a>
+                ,
               </li>
               <li>
                 a <strong>musician</strong> interested in algorithmic
@@ -60,6 +89,27 @@ function App() {
             </ul>
           </Section>
           <Section name="what i've done">
+            <Card name="genz" date="spring 22">
+              <a
+                href="https://github.com/rgildiaz/genz"
+                target="_blank"
+                rel="noreferrer"
+              >
+                github
+              </a>
+              <p>
+                my first "real" foray into generative music and an extension of{" "}
+                <a href="#genesis">genesis</a>, written in{" "}
+                <a
+                  href="https://supercollider.github.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  SuperCollider
+                </a>
+                {"."}
+              </p>
+            </Card>
             <Card name="word-music" date="fall 21">
               <a
                 href="https://github.com/rgildiaz/Word-Music"
@@ -82,26 +132,6 @@ function App() {
                 .
               </p>
             </Card>
-            <Card name="genz" date="spring 22">
-              <a
-                href="https://github.com/rgildiaz/genz"
-                target="_blank"
-                rel="noreferrer"
-              >
-                github
-              </a>
-              <p>
-                my first full-fledged piece of generative music, written in{" "}
-                <a
-                  href="https://supercollider.github.io/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  SuperCollider
-                </a>
-                {"."}
-              </p>
-            </Card>
             <Card name="documentation" date="summer/fall 22">
               <a
                 href="https://github.com/rgildiaz/iti"
@@ -121,6 +151,40 @@ function App() {
                 </a>{" "}
                 i've ended up writing a lot of documentation. it's all stored
                 here.
+              </p>
+            </Card>
+            <Card name="genesis" date="winter 21/22">
+              <a
+                href="https://youtu.be/1MvuOFsNN48"
+                target="_blank"
+                rel="noreferrer"
+              >
+                youtube
+              </a>
+              <p>
+                my first attempt at generative music, written in{" "}
+                <a
+                  href="https://supercollider.github.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  SuperCollider
+                </a>
+                . later extended as <a href="#genz">genz</a>.
+              </p>
+            </Card>
+            <Card name="familiarity" date="spring 22">
+              <a
+                href="https://soundcloud.com/rafigildiaz/familiarity"
+                target="_blank"
+                rel="noreferrer"
+              >
+                soundcloud
+              </a>
+              <p>
+                a text-to-sound electroacoustic composition that takes heavy
+                advantage of granular synthesis. every sound was sourced from a
+                single recording of my voice.
               </p>
             </Card>
             <Card name="rain" date="spring 20">
@@ -178,7 +242,14 @@ function App() {
         </div>
       </div>
       <footer className="footer" style={{ ...footerStyles }}>
-        &copy; Rafi Gil Diaz 2022
+        &copy; Rafi Gil Diaz 2022 |{" "}
+        <a
+          href="https://github.com/rgildiaz/rafi.web.illinois.edu"
+          rel="noreferrer"
+          target="_blank"
+        >
+          source code
+        </a>
       </footer>
     </div>
   );
