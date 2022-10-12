@@ -11,8 +11,8 @@ export default function CaretDown(props) {
     let scroll = 0;
 
     const didScrollPage = () => {
-        // The arrow disappears after scrolled past
-      scroll = (window.scrollY > scroll) ? window.scrollY : scroll;
+      // The arrow disappears after scrolled past
+      scroll = window.scrollY > scroll ? window.scrollY : scroll;
       let calc = 1 - (scroll - offset + range) / range;
 
       if (calc > 0.8) {
@@ -41,7 +41,7 @@ export default function CaretDown(props) {
         color: "gray",
       }}
     >
-      &#9660;
+      <a href="#main-content">&#9660;</a>
     </div>
   );
 }

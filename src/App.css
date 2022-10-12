@@ -32,6 +32,49 @@ a {
   color: grey;
 }
 
+a:hover {
+  color: white;
+}
+
+a, p, li {
+  font-size: calc(8px + 1vmin);
+}
+
+h2 {
+  font-size: calc(10px + 2vmin);
+}
+
+h3 {
+  font-size: calc(10px + 1.5vmin);
+}
+
+.logo {
+  font-size: calc(10px + 2vmin);
+}
+
+p, li {
+  color: lightgray;
+  text-align: justify;
+}
+
+strong {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: max(1vmin, 10px);
+  text-indent: -1em;
+}
+
+li::before {
+  content: ">";
+  padding-right: 0.4em;
+}
+
 .em {
   text-shadow: 3px 3px var(--em-color0), 6px 6px var(--em-color1),
     9px 9px var(--em-color2);
@@ -41,9 +84,24 @@ a {
   text-align: center;
   font-family: "JetBrains Mono", monospace;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Navbar */
+
+.nav-wrapper {
+  display: block;
+  position: sticky;
+  top: -1px;
+  background: rgba(26, 29, 34, 0.911);
+  /* background: linear-gradient(0deg, rgba(40,44,52,0.5032606792717087) 0%, rgba(40,44,52,0.7469581582633054) 4%, rgba(40,44,52,0.8590029761904762) 8%, rgba(40,44,52,0.9402354691876751) 13%, rgba(40,44,52,1) 21%, rgba(40,44,52,1) 100%); */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .nav-link:hover {
   animation: 0.5s menuHover steps(4, end) forwards;
@@ -51,18 +109,14 @@ a {
 }
 
 .logo {
-  padding-right: 50px;
-  font-size: 35px;
+  padding-right: calc(10px + 3vmin);
+  font-size: calc(20px + 2vmin);
   color: white;
   font-weight: bolder;
 }
 
-.logo a:hover {
-  font-style: normal !important;
-}
-
 .nav-link {
-  padding-right: 30px;
+  padding-right: calc(5px + 1vmin);
 }
 
 @keyframes menuHover {
@@ -81,7 +135,7 @@ a {
       6px 6px var(--em-color2);
   }
 }
-    
+
 
 /* Main Content */
 
@@ -91,6 +145,24 @@ a {
   color: gray;
 }
 
-footer {
-  color: gray;
+.card-links {
+  color: lightgray;
+}
+
+.contacts-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contacts-container * {
+  width: max(30px, 5vmin);
+  font-size: max(30px, 5vmin);
+}
+
+.contacts-container > * {
+  padding: 0 5vmin 0 5vmin;
 }

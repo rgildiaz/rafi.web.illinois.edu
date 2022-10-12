@@ -1,5 +1,6 @@
 {
-  "name": "scjs",
+  "name": "rafi",
+  "homepage": "https://rafi.web.illinois.edu",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
