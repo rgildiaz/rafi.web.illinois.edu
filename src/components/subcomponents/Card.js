@@ -1,5 +1,5 @@
 export default function Card(props) {
-  const align = Math.round(Math.random()) ? "left" : "right";
+  // const align = Math.round(Math.random()) ? "left" : "right";
   const cardStyles = {
     background: `rgba(
       ${40 * getFloatInRange(0.5, 1)}, 
@@ -10,16 +10,16 @@ export default function Card(props) {
     padding: "max(3vmin, 30px)",
     borderRadius: "25px",
     margin: "max(3vmin, 30px) 0 max(3vmin, 30px) 0",
-    alignItems: align,
-    justifyContent: align,
-    textAlign: align,
+    alignItems: props.align,
+    justifyContent: props.align,
+    textAlign: props.align,
   };
 
   return (
     <div id={props.name} style={{ ...cardStyles }}>
       <div className="card-title">
         <h3 style={{ display: "inline" }}>{props.name}.</h3>
-        <p style={{ display: "inline-block", fontSize: "13px" }}>{props.date}</p>
+        <p style={{ display: "inline-block" }}>{props.date}</p>
       </div>
       {props.children}
     </div>

@@ -1,32 +1,37 @@
-import Navlink from "./Navlink";
+// import Navlink from "./subcomponents/Navlink";
+// import resume from "../assets/files/resume.pdf";
 
-function Navbar(props) {
+export default function Navbar(props) {
   const navStyles = {
     display: "block",
     height: "100%",
     // this is so ugly :(
-    width: "calc(min(100%, 1000px) - calc(max(10vh, 40px) * 2))",
+    width: "calc(min(100%, 1000px) - calc(max(7vmin, 20px) * 2))",
     overflow: "hidden",
-    padding: "30px 0 30px 0",
+    padding: "0.5rem 0",
   };
+
+  const innerNavStyles = {
+    width: "calc(fit-content + 2em)",
+    background: "rgba(21, 25, 33, 0.95)",
+    borderRadius: "20px",
+    padding: "10px"
+  }
 
   return (
     <div className="nav-wrapper">
       <nav className="navbar" style={{ ...navStyles }}>
-        <div className="nav-container" style={{ width: "fit-content" }}>
+        <div className="nav-container" style={{ ...innerNavStyles }}>
           <a className="logo em" href="/#">
             R
           </a>
-          <Navlink
+          {/* <Navlink
             name="linkedin"
             overrideLink="https://www.linkedin.com/in/rafael-gil-diaz/"
           />
-          <Navlink name="github" overrideLink="https://github.com/rgildiaz" />
+          <Navlink name="resumé" overrideLink={resume} /> */}
         </div>
-        {/* <footer className="footer-desktop">&copy; 2022 Rafi Gil Diaz</footer> */}
       </nav>
     </div>
   );
 }
-
-export default Navbar;

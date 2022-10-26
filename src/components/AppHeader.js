@@ -1,6 +1,5 @@
 import React from "react";
-import CaretDown from "./ScrollElement";
-// import MyName from "./MyName.js";
+import CaretDown from "./subcomponents/ScrollElement";
 
 const headerStyles = {
   minHeight: "100vh",
@@ -17,14 +16,18 @@ const caretStyles = {
 };
 
 const nameStyles = {
-  color: "white"
+  color: "white",
 };
 
 export default function AppHeader(props) {
   return (
     <header className="App-header" style={{ ...headerStyles }}>
       <h1 style={{ margin: "0" }}>
-        Hi, I'm <span className="em" style={{ ...nameStyles }}>Rafi</span>.
+        Hi, I'm{" "}
+        <span className="em" style={{ ...nameStyles }}>
+          Rafi
+        </span>
+        .
       </h1>
       <CaretDown style={{ ...caretStyles }}></CaretDown>
     </header>

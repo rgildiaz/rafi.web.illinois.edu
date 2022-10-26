@@ -13,6 +13,11 @@
   src: url(fonts/JetBrains_Mono/static/JetBrainsMono-Bold.ttf);
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 11vh;
@@ -37,28 +42,34 @@ a:hover {
   color: white;
 }
 
-a,
-p,
-li {
+.card-title p {
   font-size: calc(8px + 1vmin);
 }
 
+a,
+p,
+li {
+  font-size: calc(14px + 0.5vmin);
+}
+
 h2 {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(14px + 2vmin);
 }
 
 h3 {
-  font-size: calc(10px + 1.5vmin);
-}
-
-.logo {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(14px + 1.5vmin);
 }
 
 p,
 li {
   color: lightgray;
   text-align: justify;
+}
+
+@media (max-device-width: 399px) {
+  p, li {
+    text-align: left;
+  }
 }
 
 strong {
@@ -99,8 +110,7 @@ li::before {
   display: block;
   position: sticky;
   top: -1px;
-  background: rgba(26, 29, 34, 0.911);
-  /* background: linear-gradient(0deg, rgba(40,44,52,0.5032606792717087) 0%, rgba(40,44,52,0.7469581582633054) 4%, rgba(40,44,52,0.8590029761904762) 8%, rgba(40,44,52,0.9402354691876751) 13%, rgba(40,44,52,1) 21%, rgba(40,44,52,1) 100%); */
+  background: rgba(26, 29, 34, 0);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -108,13 +118,13 @@ li::before {
 }
 
 .nav-link:hover {
-  animation: 0.5s menuHover steps(4, end) forwards;
+  animation: 0.5s menuHover steps(3, end) forwards;
   color: white;
 }
 
 .logo {
   padding-right: calc(10px + 3vmin);
-  font-size: calc(20px + 2vmin);
+  font-size: calc(20px + 3vmin);
   color: white;
   font-weight: bolder;
 }
@@ -173,13 +183,22 @@ li::before {
 
 footer * {
   font-size: 12px;
-  color: gray,
+  color: gray;
 }
 
 Section[id='who i am'] ul li a {
   color: lightgray;
+  text-decoration: underline dotted 1px gray;
 }
 
 Section[id='who i am'] ul li a:hover {
   color: white;
+}
+
+.contacts-container a img {
+  filter: brightness(45%);
+}
+
+.contacts-container a img:hover {
+  filter: none;
 }
